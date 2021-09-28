@@ -1,6 +1,6 @@
 {
-	"image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-16-bullseye",
+	"image": "mcr.microsoft.com/vscode/devcontainers/base",
 	"features": {
-		"github": true
+		"docker-in-docker": true
 	}
 }
