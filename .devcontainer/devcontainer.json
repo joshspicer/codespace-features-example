@@ -1,6 +1,29 @@
 {
-	"image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:0-16-bullseye",
+	"image": "mcr.microsoft.com/vscode/devcontainers/typescript-node:18",
 	"features": {
-		"github-cli": "latest"
-	}
+		"github-cli": "latest",
+		"joshspicer/myfeatures/helloworld": "latest"
+	},
+	"hostRequirements": {
+		"storage": "32gb",
+		"memory": "8gb"
+	},
+	"settings": {
+		"editor.formatOnSave": true,
+                "editor.bracketPairColorization.enabled": true
+	},
+	"extensions": [
+		"mads-hartmann.bash-ide-vscode",
+		"GitHub.copilot",
+	],
+	"remoteUser": "codespace",
+	"containerEnv": {
+		"MY_CONTAINER_ENV": "hehe"
+	},
+	"portsAttributes": {
+		"5000": {
+			"label": "MyExposedPort",
+			"onAutoForward": "notify"
+	},
+	"postCreateCommand": "touch 'some-configuration-after-creation"
 }
