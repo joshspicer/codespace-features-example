@@ -35,9 +35,9 @@
 	},
 	"portsAttributes": {
 		"5000": {
-			"label": "MyExposedPort",
+			"label": "MyPythonServer",
 			"onAutoForward": "notify"
 		},
 	},
-	"postCreateCommand": "python -m http.server 5000"
+	"postStartCommand": "python -m http.server 5000"
 }
