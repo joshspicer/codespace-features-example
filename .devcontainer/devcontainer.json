@@ -4,7 +4,9 @@
 		"github-cli": "latest",
 		"joshspicer/myfeatures/helloworld": {
 			"greeting": "Howdy"
-		}
+		},
+		"devcontainers/features/go": "latest",
+		"devcontainers/features/docker-in-docker": "latest"
 	},
 	"customizations": {
 		"codespaces": {
@@ -14,6 +16,11 @@
 						"contents": "read"
 					}
 				},
+				"devcontainers/features": {
+					"permissions": {
+						"contents": "read"
+					}
+				}
 			}
 		},
 	},
